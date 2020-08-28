@@ -1,0 +1,62 @@
+{
+    "slug": "/home/browxy/cs50_testcases",
+    "results": [
+        {
+            "name": "test1",
+            "description": "test1",
+            "passed": true,
+            "log": [
+                "running java  -cp /home/browxy/libraries/*:/home/browxy/target domain.HelloWorld null...",
+                "sending input 6...",
+                "checking for output \"Ingresar la posicion en la serie:\\nResultado: 8\"...",
+                "checking that program exited with status 0..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": null
+        },
+        {
+            "name": "test2",
+            "description": "test2",
+            "passed": true,
+            "log": [
+                "running java  -cp /home/browxy/libraries/*:/home/browxy/target domain.HelloWorld null...",
+                "sending input -1...",
+                "checking for output \"Ingresar la posicion en la serie:\\nDebes ingresar un tamano mayor o igual a 1\"...",
+                "checking that program exited with status 0..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": null
+        },
+        {
+            "name": "test3",
+            "description": "test3",
+            "passed": true,
+            "log": [
+                "running java  -cp /home/browxy/libraries/*:/home/browxy/target domain.HelloWorld null...",
+                "sending input 1...",
+                "checking for output \"Ingresar la posicion en la serie:\\nResultado: 1\"...",
+                "checking that program exited with status 0..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": null
+        },
+        {
+            "name": "test4",
+            "description": "test4",
+            "passed": true,
+            "log": [
+                "running java  -cp /home/browxy/libraries/*:/home/browxy/target domain.HelloWorld null...",
+                "sending input 9...",
+                "checking for output \"Ingresar la posicion en la serie:\\nResultado: 34\"...",
+                "checking that program exited with status 0..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": null
+        }
+    ],
+    "version": "3.0.10"
+}

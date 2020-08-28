@@ -1,0 +1,35 @@
+check50:
+  checks:
+    test1:
+      - run: ${runCommand}
+        stdin: 
+          - 6
+        stdout: 
+          - "Ingresar la posicion en la serie:"
+          - "Resultado: 8"
+        exit: 0
+    test2:
+      - run: ${runCommand}
+        stdin: 
+          - "-1"
+        stdout: 
+          - "Ingresar la posicion en la serie:"
+          - "Debes ingresar un tamano mayor o igual a 1"
+        exit: 0  
+    test3:
+      - run: ${runCommand}
+        stdin: 
+          - "1"
+        stdout: 
+          - "Ingresar la posicion en la serie:"
+          - "Resultado: 1"
+        exit: 0
+    test4:
+      - run: ${runCommand}
+        stdin: 
+          - "9"
+        stdout: 
+          - "Ingresar la posicion en la serie:"
+          - "Resultado: 34"
+        exit: 0         
+        

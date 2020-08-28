@@ -1,0 +1,16 @@
+Ejercicio 1: Fibonacci Recursivo
+
+La sucesión de Fibonacci comienza con los números 0 y 1 y a partir de estos los números que siguen 
+son la suma de los dos anteriores. Ejemplo: (0,1,1,2,3,5,8…).
+Hacer un programa que nos pida un número y que nos diga para dicho número que número corresponde
+en la sucesión de Fibonacci. Por ejemplo si el número es igual a 4, la función debería retornar: 3
+Tener en cuenta la siguiente definición recursiva de la serie:
+    • fibonacci(0) = 0
+    • fibonacci(1) = 1
+    • fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)
+
+Ejemplo de salida del programa:
+
+Ingresar la posicion en la serie:
+6
+Resultado: 8
