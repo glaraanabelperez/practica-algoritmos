@@ -1,0 +1,38 @@
+{
+    "slug": "/home/browxy/cs50_testcases",
+    "results": [
+        {
+            "name": "test1",
+            "description": "test1",
+            "passed": true,
+            "log": [
+                "running java  -cp /home/browxy/libraries/*:/home/browxy/target domain.HelloWorld null...",
+                "sending input abghopz\\np...",
+                "checking for output \"Ingresar el codigo:\\nIngresar la letra a buscar:\\nLa letra p se encuentra en la posicion 5\"...",
+                "checking that program exited with status 0..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": null
+        },
+        {
+            "name": "test2",
+            "description": "test2",
+            "passed": false,
+            "log": [
+                "running java  -cp /home/browxy/libraries/*:/home/browxy/target domain.HelloWorld null...",
+                "sending input aeiou\\nw...",
+                "checking for output \"Ingresar el codigo:\\nIngresar la letra a buscar:\\nLa letra w no se encuentra en el codigo ingresado\"..."
+            ],
+            "cause": {
+                "rationale": "expected \"Ingresar el co...\", not \"Ingresar el co...\"",
+                "help": null,
+                "expected": "Ingresar el codigo:\nIngresar la letra a buscar:\nLa letra w no se encuentra en el codigo ingresado",
+                "actual": "Ingresar el codigo:\nIngresar la letra a buscar:\nException in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: 5\n\tat domain.HelloWorld.busquedaBinaria(HelloWorld.java:61)\n\tat domain.HelloWorld.busquedaBinaria(HelloWorld.java:67)\n\tat domain.HelloWorld.busquedaBinaria(HelloWorld.java:67)\n\tat domain.HelloWorld.main(HelloWorld.java:25)\n"
+            },
+            "data": {},
+            "dependency": null
+        }
+    ],
+    "version": "3.0.10"
+}

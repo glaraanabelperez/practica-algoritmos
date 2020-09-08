@@ -1,0 +1,139 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>body {
+  font-size: 1em; 
+  box-sizing: border-box;
+}
+.test-result {
+  border-bottom: 2px double dodgerblue;
+}
+
+.test-result>li{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: left;
+}
+.test-result>li h2{
+  color: #222;
+}
+.test-circle {
+  display: flex;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  padding: .5em;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.test-passed {
+background-color: green;
+}
+
+.test-failed {
+  background-color: darkred;
+}
+.test-emoji {
+  color: #fff;
+  font-weight: bolder;
+ font-size: 1.5em;
+}
+
+.test-result-full {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.test-result-full>li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 15px 0;
+  box-shadow: 7px 9px 15px -5px rgba(163,166,168,1);
+}
+.test-result-full>.test-result-passed {
+border-left: 5px solid green;
+}
+.test-result-full>.test-result-failed {
+  border-left: 5px solid darkred;
+}
+
+.test-log {
+  display: block;
+  white-space: pre;
+  font-size: 1.2em;
+  font-family: 'Same Font As PRE or CODE';
+  margin: 1em 0;
+  color: #444;
+  padding: .5em;
+  line-height: 1.5em;
+  border-radius: .3em;
+}
+.test-log-pass {
+  background-color: #d7f5d5;
+}
+.test-log-fail {
+  background-color: #ffe8e8;
+}
+.test-emoji-fail{
+  color: darkred;
+  font-size: 2em;
+  font-weight: bolder;
+ background-color: #fff;
+}
+
+.test-emoji-pass{
+  color: green;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.test-result-passed h3,
+.test-result-failed h3 {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 1.5em;
+}
+.test-full-failed-log {
+  padding: 8px;
+  border: 1px solid #dedede;
+  border-left: 3px solid #de6262;
+}
+.test-full-failed-log div p {
+  color: #444;
+  font-weight: bolder;
+}
+@media (max-width: 700px){
+
+  .test-result-full {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+  }  
+  .test-result-passed,
+  .test-result-failed {
+    width: 95%;
+  } 
+  .test-log {
+    font-size: 1.1em;
+    line-height: 2em;
+    overflow: auto;
+  } 
+}
+</style></head><body style='font-size: 1em; box-sizing: border-box;'><h1>Test Results</h1><ul class='test-result'><li><div class='test-circle test-passed'><span class='test-emoji'>&#10003;</span></div><h2>passed tests: 1</h2></li><li><div class='test-circle test-failed'><span class='test-emoji'>&#10005;</span></div><h2>failed tests: 1</h2></li></ul><ul class='test-result-full'><li class='test-result-passed'><span class='test-emoji-pass'>&#10003;</span><h3> Test: test1</h3><pre class='test-log test-log-pass'>running java  -cp /home/browxy/libraries/*:/home/browxy/target domain.HelloWorld null...
+sending input abghopz\np...
+checking for output "Ingresar el codigo:\nIngresar la letra a buscar:\nLa letra p se encuentra en la posicion 5"...
+checking that program exited with status 0...</pre></li><li class='test-result-failed'><span class='test-emoji-fail test-log-fail'>&#10007;</span><h3> Test: test2</h3><pre class='test-log test-log-fail'>running java  -cp /home/browxy/libraries/*:/home/browxy/target domain.HelloWorld null...
+sending input aeiou\nw...
+checking for output "Ingresar el codigo:\nIngresar la letra a buscar:\nLa letra w no se encuentra en el codigo ingresado"...</pre><section class='test-full-failed-log'><div><p>Cause:</p><pre class='test-log test-log-fail'>expected "Ingresar el co...", not "Ingresar el co..."</pre></div><div><p>Expected:</p><pre class='test-log test-log-fail'>Ingresar el codigo:
+Ingresar la letra a buscar:
+La letra w no se encuentra en el codigo ingresado</pre></div><div><p>Actual:</p><pre class='test-log test-log-fail'>Ingresar el codigo:
+Ingresar la letra a buscar:
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at domain.HelloWorld.busquedaBinaria(HelloWorld.java:61)
+	at domain.HelloWorld.busquedaBinaria(HelloWorld.java:67)
+	at domain.HelloWorld.busquedaBinaria(HelloWorld.java:67)
+	at domain.HelloWorld.main(HelloWorld.java:25)
+</pre></div></section></li></ul></body></html>

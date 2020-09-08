@@ -1,0 +1,23 @@
+check50:
+  checks:
+    test1:
+      - run: ${runCommand}
+        stdin: 
+          - "abghopz"
+          - "p"
+        stdout: 
+          - "Ingresar el codigo:"
+          - "Ingresar la letra a buscar:"
+          - "La letra p se encuentra en la posicion 5"
+        exit: 0
+    test2:
+      - run: ${runCommand}
+        stdin: 
+          - "aeiou"
+          - "w"
+        stdout: 
+          - "Ingresar el codigo:"
+          - "Ingresar la letra a buscar:"
+          - "La letra w no se encuentra en el codigo ingresado"
+        exit: 0        
+    

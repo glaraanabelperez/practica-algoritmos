@@ -1,0 +1,19 @@
+Ejercicio 2: Búsqueda Binaria de letras
+
+Hacer un programa utilice la búsqueda binaria para buscar una letra en un codigo
+Tener en cuenta que el codigo que se ingresa debe tener las letras ordenadas. Ejemplo "abghopz"
+Parte del programa ya se encuentra implementado, agregar lo que falta.
+
+Ejemplos de salidas del programa:
+
+Ingresar el codigo:
+abghopz
+Ingresar la letra a buscar:
+p
+La letra p se encuentra en la posicion 5
+
+Ingresar el codigo:
+abghopz
+Ingresar la letra a buscar:
+w
+La letra w no se encuentra en el codigo ingresado
